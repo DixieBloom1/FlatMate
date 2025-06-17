@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/expenseDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expense Description"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/expenseTotalAmountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Amount"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/splitMethodRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+            <RadioButton
+                android:id="@+id/equalSplitRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equal Split"
+                android:checked="false"/>
+            <RadioButton
+                android:id="@+id/manualSplitRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manual Split"
+                android:checked="true"/>
+        </RadioGroup>
+
+        <!-- Dynamic manual splits layout -->
+        <LinearLayout
+            android:id="@+id/manualSplitsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/remainingDebtTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remaining debt: 0.00"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/updateExpenseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Expense"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

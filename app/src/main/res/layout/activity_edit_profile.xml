@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Polje za unos imena -->
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:inputType="text" />
+
+    <!-- Polje za unos prezimena -->
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:inputType="text" />
+
+    <!-- Polje za unos fakulteta -->
+    <EditText
+        android:id="@+id/facultyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Faculty"
+        android:inputType="text" />
+
+    <!-- Polje za unos godine rođenja -->
+    <EditText
+        android:id="@+id/birthYearEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Year of Birth"
+        android:inputType="number" />
+
+    <!-- Gumb za spremanje promjena -->
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:layout_marginTop="16dp" />
+
+    <!-- Gumb za promjenu lozinke -->
+    <Button
+        android:id="@+id/changePasswordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

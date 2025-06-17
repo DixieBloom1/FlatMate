@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input for Roommate ID -->
+    <EditText
+        android:id="@+id/roommateIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Roommate ID"
+        android:inputType="text" />
+
+    <!-- TextView to display User's ID -->
+    <TextView
+        android:id="@+id/myIdTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My ID: **********"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to Add Roommate -->
+    <Button
+        android:id="@+id/addRoommateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Roommate"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

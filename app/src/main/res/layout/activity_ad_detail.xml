@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Naslov oglasa -->
+    <TextView
+        android:id="@+id/adTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ad Title"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- Ime i prezime osobe -->
+    <TextView
+        android:id="@+id/adNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: Sergej Karas"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Detalji oglasa -->
+    <TextView
+        android:id="@+id/adDetailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Gumb za kontaktiranje -->
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Person"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

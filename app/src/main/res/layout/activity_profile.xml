@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Ime korisnika -->
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Prezime korisnika -->
+    <TextView
+        android:id="@+id/userSurnameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Surname: "
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- E-mail korisnika -->
+    <TextView
+        android:id="@+id/userEmailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Gumb za uređivanje profila -->
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_marginTop="16dp" />
+
+    <!-- Gumb za promjenu lozinke -->
+    <Button
+        android:id="@+id/changePasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:layout_marginTop="16dp" />
+
+    <!-- Gumb za odjavu -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
