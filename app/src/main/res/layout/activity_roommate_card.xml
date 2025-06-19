@@ -26,7 +26,7 @@
         android:id="@+id/deleteRoommateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/red"
+        android:background="@android:color/holo_red_light"
         android:text="Delete"
         android:textColor="@android:color/white" />
 </LinearLayout>

@@ -1,71 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@color/colorBackground">
 
-    <!-- Unos za Naslov -->
-    <EditText
-        android:id="@+id/titleEditText"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Title" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <!-- Unos za Ime -->
-    <EditText
-        android:id="@+id/nameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="First Name" />
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorPrimary" />
 
-    <!-- Unos za Prezime -->
-    <EditText
-        android:id="@+id/surnameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Last Name" />
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="12dp" />
 
-    <!-- Unos za Godinu Rođenja -->
-    <EditText
-        android:id="@+id/birthYearEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Year of Birth" />
+        <EditText
+            android:id="@+id/surnameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="12dp" />
 
-    <!-- Unos za Telefon -->
-    <EditText
-        android:id="@+id/phoneEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Phone Number" />
+        <EditText
+            android:id="@+id/birthYearEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year of Birth"
+            android:inputType="number"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="12dp" />
 
-    <!-- Unos za Fakultet -->
-    <EditText
-        android:id="@+id/facultyEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Faculty" />
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="12dp" />
 
-    <!-- Unos za Mjesto Studiranja -->
-    <EditText
-        android:id="@+id/locationEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Location" />
+        <EditText
+            android:id="@+id/facultyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Faculty"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="12dp" />
 
-    <!-- Unos za Opis -->
-    <EditText
-        android:id="@+id/descriptionEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Description"
-        android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="12dp" />
 
-    <!-- Gumb za spremanje -->
-    <Button
-        android:id="@+id/saveAdButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save Ad" />
-</LinearLayout>
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/saveAdButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Ad"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

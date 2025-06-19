@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
@@ -9,24 +9,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Expense Description -->
         <EditText
             android:id="@+id/expenseDescriptionEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Expense Description"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorPrimary" />
 
-        <!-- Total Amount -->
         <EditText
             android:id="@+id/expenseTotalAmountEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Total Amount"
             android:inputType="numberDecimal"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:textColor="@color/textPrimary"
+            android:backgroundTint="@color/colorPrimary" />
 
-        <!-- Split Method RadioGroup -->
         <RadioGroup
             android:id="@+id/splitMethodRadioGroup"
             android:layout_width="match_parent"
@@ -45,7 +46,6 @@
                 android:text="Manual Split" />
         </RadioGroup>
 
-        <!-- Layout for manual split fields -->
         <LinearLayout
             android:id="@+id/manualSplitsLayout"
             android:layout_width="match_parent"
@@ -54,21 +54,22 @@
             android:visibility="gone"
             android:layout_marginTop="16dp" />
 
-        <!-- Display remaining debt -->
         <TextView
             android:id="@+id/remainingDebtTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Remaining debt: 0.00"
             android:textSize="16sp"
+            android:textColor="@color/textMuted"
             android:layout_marginTop="16dp" />
 
-        <!-- Button to add the expense -->
         <Button
             android:id="@+id/addExpenseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add Expense"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorAccent"
             android:layout_marginTop="20dp" />
     </LinearLayout>
 </ScrollView>

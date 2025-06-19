@@ -1,60 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="32dp"
-    android:gravity="center">
+    android:background="@color/colorBackground">
 
-    <!-- Name Input -->
-    <EditText
-        android:id="@+id/nameEditText"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
-        android:importantForAccessibility="yes" />
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
 
-    <EditText
-        android:id="@+id/lastNameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Last Name"
-        android:importantForAccessibility="yes" />
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:padding="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="12dp" />
 
-    <!-- Email Input -->
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:importantForAccessibility="yes" />
+        <EditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:padding="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="12dp" />
 
-    <!-- Password Input -->
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:importantForAccessibility="yes" />
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="12dp" />
 
-    <!-- Register Button -->
-    <Button
-        android:id="@+id/registerButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:onClick="registerUser"
-        android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColorHint="@color/textMuted"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="16dp" />
 
-    <!-- Link for Login Screen -->
-    <TextView
-        android:id="@+id/loginLink"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Already have an account? Login"
-        android:textColor="@android:color/holo_blue_dark"
-        android:gravity="center"
-        android:onClick="openLoginScreen" />
-</LinearLayout>
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="@color/colorSecondary"
+            android:textColor="@android:color/white"
+            android:onClick="registerUser"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/loginLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="openLoginScreen" />
+    </LinearLayout>
+</ScrollView>

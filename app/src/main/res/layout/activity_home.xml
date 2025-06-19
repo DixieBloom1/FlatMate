@@ -1,86 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="32dp"
-    android:gravity="center">
+    android:background="@color/colorBackground">
 
-    <!-- Prikaz imena korisnika -->
-    <TextView
-        android:id="@+id/userNameTextView"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello, User!"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:textColor="@android:color/black"/>
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
 
-    <!-- Prikaz korisničkog ID-a -->
-    <TextView
-        android:id="@+id/userIdTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="My ID: **********"
-        android:textSize="16sp"
-        android:gravity="center"
-        android:textColor="@android:color/black"
-        android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello, User!"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@color/textPrimary"/>
 
-    <Button
-        android:id="@+id/editProfileButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Edit Profile"
-        android:layout_marginTop="16dp" />
+        <TextView
+            android:id="@+id/userIdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My ID: **********"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/textMuted"
+            android:layout_marginTop="12dp"/>
 
-    <!-- Informacije o broju cimera -->
-    <TextView
-        android:id="@+id/roommateCountTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Roommate count: 0"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:textColor="@android:color/black"/>
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
 
-    <!-- Dugme za pretraživanje cimera -->
-    <Button
-        android:id="@+id/searchRoommatesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Search Roommates"
-        android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/roommateCountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roommate count: 0"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/textPrimary"
+            android:layout_marginTop="24dp"/>
 
-    <!-- Dugme za upravljanje troškovima -->
-    <Button
-        android:id="@+id/manageExpensesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Manage Expenses"
-        android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/searchRoommatesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Roommates"
+            android:backgroundTint="@color/colorSecondary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
 
-    <!-- Dugme za praćenje obveza -->
-    <Button
-        android:id="@+id/viewRoommatesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="List Roommates"
-        android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/manageExpensesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Expenses"
+            android:backgroundTint="@color/colorSecondary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
 
-    <!-- Dugme za postavke -->
-    <Button
-        android:id="@+id/settingsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Settings"
-        android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/viewRoommatesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List Roommates"
+            android:backgroundTint="@color/colorSecondary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
 
-    <!-- Dugme za dodavanje cimera -->
-    <Button
-        android:id="@+id/addRoommateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Roommate"
-        android:layout_marginTop="16dp"/>
-</LinearLayout>
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/addRoommateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Roommate"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
